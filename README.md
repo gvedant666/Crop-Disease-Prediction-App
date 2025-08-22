@@ -1,50 +1,108 @@
-# Welcome to your Expo app 👋
+# Krishi-Sakha
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**Krishi-Sakha** is an AI-powered solution designed to help farmers detect crop diseases early and receive preventive guidance based on weather conditions. The project consists of a mobile application and a backend service integrated with TensorFlow models for real-time disease prediction and multilingual support in 11 regional languages.
 
-## Get started
+---
 
-1. Install dependencies
+## Features
 
+- **Real-Time Disease Detection**: Upload crop images to receive instant disease diagnosis using an image classification model.
+- **Weather-Driven Alerts**: Provides preventive advice based on local weather data to help farmers take proactive measures.
+- **Multilingual Audio Support**: Supports 11 languages with text-to-speech functionality, making the app accessible to farmers with varied language needs.
+- **User-Friendly Interface**: Simple and intuitive design for ease of use by farmers with limited technical knowledge.
+
+---
+
+## Project Repositories
+
+- **[App Repository](https://github.com/ImaginedTime/Crop-Disease-Prediction-App)**: Contains the source code for the mobile app built with React Native and Expo.
+- **[Backend Repository](https://github.com/ImaginedTime/Crop-disease-prediction-backend)**: Contains the FastAPI backend and TensorFlow models for disease prediction.
+
+---
+
+## Technologies Used
+
+- **Frontend (App)**: React Native with Expo for cross-platform compatibility on Android and iOS devices.
+- **Backend**: FastAPI to handle image processing and disease prediction requests.
+- **Machine Learning**: TensorFlow and Keras for building and training crop disease detection models.
+- **Google Sheets API**: Manages disease information and treatment guidelines in multiple languages.
+- **Text-to-Speech (TTS)**: Expo’s TTS library for providing audio guidance in regional languages.
+
+---
+
+## Setup and Installation
+
+### Clone the Repositories
+
+1. Clone the app repository:
+   ```bash
+   git clone https://github.com/ImaginedTime/Crop-Disease-Prediction-App.git
+   ```
+2. Clone the backend repository:
+   ```bash
+   git clone https://github.com/ImaginedTime/Crop-disease-prediction-backend.git
+   ```
+
+### Backend Setup
+
+1. Navigate to the backend directory:
+   ```bash
+   cd Crop-disease-prediction-backend
+   ```
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the FastAPI server:
+   ```bash
+   uvicorn main:app --reload
+   ```
+
+### App Setup
+
+1. Navigate to the app directory:
+   ```bash
+   cd Crop-Disease-Prediction-App
+   ```
+2. Install the required dependencies:
    ```bash
    npm install
    ```
-
-2. Start the app
-
+3. Start the app with Expo:
    ```bash
-    npx expo start
+   expo start
    ```
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Usage
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+1. **Upload Crop Images**: Farmers can upload an image of their crop through the app to receive a diagnosis.
+2. **Receive Disease Information**: The app provides disease information and preventive tips based on the prediction.
+3. **Audio Guidance**: Text-to-speech functionality provides audio instructions in the selected language.
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## Future Enhancements
 
-```bash
-npm run reset-project
-```
+- **Extended Crop Support**: Add more crops and diseases to the database.
+- **Soil-Based Recommendations**: Provide crop suggestions based on soil data and weather patterns.
+- **Offline Mode**: Enable the app to function in low-connectivity areas by storing key information offline.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## Contributors
 
-To learn more about developing your project with Expo, look at the following resources:
+- **`Uday Om Srivastava`**
+- **`Karthik Ragulan`**
+- **`Vedant Gaikwad`**
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## License
 
-Join our community of developers creating universal apps.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+Feel free to add any other relevant links or details to further enhance the README. Let me know if you'd like more customization!
